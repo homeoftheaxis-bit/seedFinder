@@ -25,9 +25,6 @@ int main() {
     setupGenerator(&g, MC_1_21, 0);
 	uint64_t lastSave = 0;
     
-
-
-    
     std::ifstream Progress("Progress.txt");
     std::string line;
     fstream Candidates("Candidates.txt", ios::app);
@@ -76,11 +73,7 @@ int main() {
             string dateStr = asctime(date);
             dateStr.pop_back();
 
-            
-
             std::cout << YELLOW << dateStr << RESET << " :: Checked seed " << seed << " \n";
-
-
         }
 
         if (spawnBiomeID != taiga) { continue; }
